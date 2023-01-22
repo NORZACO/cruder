@@ -8,3 +8,5 @@
 ## Testing
 
 To test our `POST`, `PUT`, and `DELETE` requests, we can use a tool like [Postman](https://www.postman.com/) or a [VS Code extension](https://marketplace.visualstudio.com/items?itemName=thunder-client.thunder-client) like Thunder Client to send the HTTP requests. Alternatively, you can use [curl](https://curl.haxx.se/), a command-line tool that is already available on your terminal.
+
+to install all the dependencies run: `npm install --save-dev @babel/cli @babel/core @babel/node @babel/preset-env cookie-parser ejs eslint eslint-config-airbnb-base eslint-plugin-import morgan && npm install --save express pg jade socket.io`
