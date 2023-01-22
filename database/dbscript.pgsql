@@ -8,12 +8,12 @@
 --     created_at TIMESTAMP NOT NULL DEFAULT NOW()
 -- );
 
--- INSERT INTO users (username, email, password,biograph,descriptions)
--- VALUES (
---     'mwamuzi_shada', 
---     'mwamuzi_shada@example.com', 
---     'password', 
---     'this is my descript: mwamuzi shada Doe is a software developer', 
---     'I am a backend with 5 years of experience'
---     );
+INSERT INTO users (username, email, password,biograph,descriptions)
+VALUES (
+    'mwamuzi_shada', 
+    'mwamuzi_shada@example.com', 
+    'password', 
+    'this is my descript: mwamuzi shada Doe is a software developer', 
+    'I am a backend with 5 years of experience'
+    );
 

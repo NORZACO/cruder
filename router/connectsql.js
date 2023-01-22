@@ -10,6 +10,7 @@ const databaseConnection = new Client({
     port: 5432,
   })
 
+  databaseConnection.connect()
 
 // const getUsers = (request, response) => {
 //   pool.query('SELECT * FROM users ORDER BY id ASC', (error, results) => {
