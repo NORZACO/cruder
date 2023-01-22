@@ -1,0 +1,4 @@
+-- Create a new database called 'api'
+CREATE DATABASE api
+
+
