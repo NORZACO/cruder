@@ -23,7 +23,7 @@ const createRouterx = (request, response) => {
 
 
 const createRouter = (request, response) => {
-  const { username, email, password, biograph, description } = request.body;
+  const { username, email, password, biograph, descriptions } = request.body;
 
   // validate inputs
   if (!username || !email || !password) {
@@ -39,10 +39,10 @@ const createRouter = (request, response) => {
     return;
   }
 
-  const query = `INSERT INTO users (username, email, password, biograph, description) VALUES ($1, $2, $3, $4, $5)`;
-  const values = [username, email, password, biograph, description];
+  const query = `INSERT INTO users (username, email, password, biograph, descriptions) VALUES ($1, $2, $3, $4, $5)`;
+  const user_info_values = [username, email, password, biograph, descriptions];
 
-  databaseConnection.query(query, values, (error, results) => {
+  databaseConnection.query(query, user_info_values, (error, results) => {
     if (error) {
       throw error;
     }
